@@ -86,7 +86,7 @@ function WindowView:add_highlights(lines_with_hl)
                         self.config.ns_id,
                         value.hl,
                         line.idx - 1,
-                        startindex - 1,
+                        0,
                         endindex
                     )
                 end
