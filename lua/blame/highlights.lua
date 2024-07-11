@@ -6,9 +6,9 @@ local function random_rgb(custom_colors)
         local index = math.random(1, #custom_colors)
         return custom_colors[index]
     else
-        local r = math.random(1, 255)
-        local g = math.random(1, 255)
-        local b = math.random(1, 255)
+        local r = math.random(50, 255)
+        local g = math.random(50, 255)
+        local b = math.random(50, 255)
         return string.format("#%02X%02X%02X", r, g, b)
     end
 end
