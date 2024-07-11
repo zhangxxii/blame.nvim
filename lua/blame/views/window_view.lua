@@ -410,6 +410,7 @@ function WindowView:setup_autocmd()
 
     vim.api.nvim_create_autocmd({ "CursorMoved" }, {
         callback = function()
+            print("CursorMoved.........")
             if self.commit_info:is_open() == true then
                 self.commit_info:close(false)
             end
